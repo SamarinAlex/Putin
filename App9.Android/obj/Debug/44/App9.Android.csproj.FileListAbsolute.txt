@@ -1,0 +1,3 @@
+C:\Users\Administrator.WIN2016\Source\Repos\App9\App9.Android\obj\Debug\44\MonoAndroid,Version=v4.4.AssemblyAttributes.cs
+C:\Users\Administrator.WIN2016\Source\Repos\App9\App9.Android\obj\Debug\44\build.props
+C:\Users\Administrator.WIN2016\Source\Repos\App9\App9.Android\obj\Debug\44\adb.props
