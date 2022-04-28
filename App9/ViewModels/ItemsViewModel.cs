@@ -54,7 +54,7 @@ namespace App9.ViewModels
         public void OnAppearing()
         {
             IsBusy = true;
-            SelectedItem = null;
+            SelectedItem = null; 
         }
 
         public Item SelectedItem
