@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App9.Views.AboutPage"
+             xmlns:vm="clr-namespace:App9.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                    <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
+                </ContentView>
+            </StackLayout>
+        </StackLayout>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+<!--                <Label Text="Начать разработку приложения 9" FontSize="Default"/> -->
+                <Label Text="Купите Хаоми Рыгни 9" FontSize="32"/>
+                <Label Text="Измените ваш файл XAML и сохраните его. И вы увидите изменение среды UI в работающем приложении XAML . Никого не бойтесь!" FontSize="12" Padding="0,0,0,0"/>
+                <Label FontSize="10" Padding="0,24,0,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Можно посмотреть ещё "/>
+                                <Span Text="https://www.youtube.com/watch?v=vx88ExjBt8s" FontAttributes="Bold"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button Margin="0,10,0,0" Text="Alex сюда"
+                        Command="{Binding OpenWebCommand}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+                <Button Margin="0,10,0,0" Text="Samarin сюда"
+                        Command="{Binding OpenWebCommand2}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+                <Button Margin="0,10,0,0" Text="Остальным сюда"
+                        Command="{Binding OpenWebCommand3}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+
+
+                <!--                
+                
+                <Button Margin="0,10,0,0" Text="Миллионерам на дискотеку сюда"
+                        Command="{Binding OpenWebCommand4}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+                <Button Margin="0,10,0,0" Text="Die Twinnies"
+                        Command="{Binding OpenWebCommand5}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+                <Button Margin="0,10,0,0" Text="Die Twinnies 2"
+                        Command="{Binding OpenWebCommand6}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+                <Button Margin="0,10,0,0" Text="Am Schulhof mit die Zillertaler"
+                        Command="{Binding OpenWebCommand7}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+                <Button Margin="0,10,0,0" Text="The Traveling Wilburys Купил Xiaomi"
+                        Command="{Binding OpenWebCommand8}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+-->                
+                
+                
+                
+                
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
